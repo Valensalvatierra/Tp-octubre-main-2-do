@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="archivo.css">
+    <title> Formulario de Contacto</title>
+    <link rel="icon" href="imagenes/Peachpuff Brush Stroke Photography Logo (9).png" width: 100px>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Carter+One&family=Caveat+Brush&family=Comfortaa:wght@300&family=Concert+One&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/34f904f86f.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+
+        <div class="maquetado_f">
+            <div class="flex-containerh">
+                <div class="Icono"><img class="logo" src="Logo restaurant def.png" height="140px" ; width="300px"></div>
+                <div class="menu"> <a href="home.html"> Home</a></div>
+                <div class="menu"> <a href="sucursales.html">Sucursales </a></div>
+                <div class="menu"> <a href="reservas.html">Reservas </a> </div>
+                <div class="menu"> <a href="contactanos.html">Contactanos </a></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor__formulario">
+            <h2 class="titulo_c">Contactanos</h2>
+            <form action="Mostrar_datos.html" target="_blank" name="contactanos" class="contacto" id="contacto"
+                action="mostrar_datos.html" target="_blank">
+
+                <div class="info_c">
+                    <!-- INPUT NOMBRE -->
+                    <div class="formulario__grupo" id="grupo__name">
+                        <label class="formulario__label" for="name">Nombre: </label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="name" id="name">
+                            <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <p class="formulario__input-error">Complete sin números ni caracteres especiales.</p>
+                    </div>
+                    <!-- INPUT TELEFONO -->
+                    <div class="formulario__grupo" id="grupo__phone">
+                        <label class="formulario__label" for="phone">Teléfono: </label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="phone" id="phone">
+                            <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <p class="formulario__input-error">Ingrese solamente numeros, máximo 14 caracteres.</p>
+                    </div>
+                    <!-- INPUT EMAIL -->
+                    <div class="formulario__grupo" id="grupo__email">
+                        <label class="formulario__label" for="email">Correo: </label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="email" id="email">
+                            <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <p class="formulario__input-error">Ingrese un formato valido.</p>
+                    </div>
+                    <!-- <label for="Tel_Con">Tel.: </label>
+                    <input type="text" name="phone" id="phone">
+
+                    <label for="Email_Con">Email: </label>
+                    <input type="email" name="email" id="email">
+
+                    <div class="icons">
+                        <span class="icon1 fas fa-exclamation"></span>
+                        <span class="icon2 fas fa-chack"></span>
+                        <i class="fa-solid fa-exclamation"></i>
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="texto-error">
+                        Introduzca un correo válido
+                    </div> -->
+                </div>
+
+                <div class="comentario">
+                    <label for="Com_Con">Escriba su Comentario: </label>
+                    <textarea class="textarea" name="text" id="" cols="50" rows="20"></textarea>
+                </div>
+
+                <div class="enviar_c">
+                    <button id="submit">Enviar</button>
+                </div>
+
+
+            </form>
+
+        </div>
+    </main>
+    <footer>
+        <div class="flex_fot">
+
+            <a href="https://web.whatsapp.com/" target="_blank"><img class="ico" src="Iconos/wa.png"
+                    alt="Contacto whatsapp"></a>
+            <a href="https://es-la.facebook.com/" target="_blank"><img class="ico" src="Iconos/Fb (2).png"
+                    alt="Contacto whatsapp"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img class="ico" src="Iconos/Ig.png"
+                    alt="Contacto whatsapp"></a>
+            <a href="https://twitter.com/" target="_blank"><img class="ico" src="Iconos/Twitter.png"
+                    alt="Contacto whatsapp"></a>
+
+        </div>
+    </footer>
+    <script src="/js/formulario.js"></script>
+</body>
+
+</html>
