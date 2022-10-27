@@ -29,6 +29,34 @@
                 <div class="menu"> <a href="contactanos.html">Contactanos </a></div>
             </div>
 
+            <div class="AAA">
+                <button onclick="traerDatosAPI()">Cotización del Dólar</button>
+            </div>
+            <div id="cot" >
+            
+            </div>
+
+
+            <script>
+
+                function traerDatosAPI() {
+                    fetch('https://mercados.ambito.com//home/general')
+
+                        .then(datos => datos.json()) 
+                        .then(datos => {
+                            console.log(datos)
+                
+                            cot.innerHTML =
+                                `<div class="Cotizacion">
+                                 
+                                 <b>Cotización del dólar</b> <br>
+                                 Compra: ${datos[0].compra} $<br>
+                                 Venta: ${datos[0].venta} $
+                                 </div>`
+                        })
+                }
+            </script>
+
 
             <form action="Mostrar_datos.html" target="_blank" class="For_res">
                 <h1 class="titulo_r">Hace tu Reserva</h1>
